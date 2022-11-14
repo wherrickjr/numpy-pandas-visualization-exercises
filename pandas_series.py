@@ -50,10 +50,10 @@ letters.mode()
 
 #2 letter occurs least frequently
 
-letters.value_counts().head(1)
+letters.value_counts().tail(1)
 
 #3 how many vowels
-letters.str.count('[aeiou').sum()
+letters.str.count('[aeiou]').sum()
 
 ##4 how many consonants
 letters.str.count('[^aeiou]').sum()
@@ -116,3 +116,4 @@ bin_labels = ['F', 'D', 'C', 'B', 'A']
 letter_grades = pd.cut(curved_grades, bins=bin_edges, labels = bin_labels)
 
 #6
+adfadf
