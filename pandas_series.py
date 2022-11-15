@@ -1,3 +1,75 @@
+##Part 1 exercises
+import numpy as np
+import pandas as np
+fruits_series = pd.Series(["kiwi", "mango", "strawberry", 
+                           "pineapple", "gala apple", 
+                           "honeycrisp apple", "tomato", 
+                           "watermelon", "honeydew", "kiwi", 
+                           "kiwi", "kiwi", "mango", 
+                           "blueberry", "blackberry", 
+                           "gooseberry", "papaya"])
+
+## elements in fruits
+len(fruits_series)
+fruits_series.size
+fruits_series.count()
+
+##2 index from fruits
+list(fruits_series.index)
+
+##3 only the values
+
+list(fruits_series.values)
+
+##4 data type
+fruits_series.dtype
+
+
+##5 
+fruits_series.head() #first 5
+fruits_series.tails(3) #last 3
+fruits_series.sample(2) #2 random
+
+#6 info from .describe
+fruits_series.describe()
+
+## 7 unique string values from fruits
+print(list(fruits_series.value_counts().index))
+print(fruits_series.unique())
+
+##8 how many times each unique is in the list
+fruits_series.value_counts()
+
+##9 string value that occurs most frequently
+fruit_series.mode()
+
+##10 string that is least frequent
+
+fruits_series.value_counts().nsmallest(n=1, keep='all')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 fruits_series = pd.Series["kiwi", "mango", "strawberry", "pineapple", "gala apple", "honeycrisp apple", "tomato", "watermelon", "honeydew", "kiwi", "kiwi", "kiwi", "mango", "blueberry", "blackberry", "gooseberry", "papaya"]
 
 import numpy as np
